@@ -14,8 +14,7 @@ def first_challenge
   }
 
   #your code here
-contacts.each do |key, value|
-  if value == "strawberry" delete
+contacts.each {|value| delete(value) if == "strawberry"}
 
   #remember to return your newly altered contacts hash!
   contacts
